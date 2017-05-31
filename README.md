@@ -1,5 +1,5 @@
 # entropy-up
 
-Get about 1500+ entropy in my testing
+Gain about 1500+ entropy, in my testing
 
 A script written in Ruby 💎
