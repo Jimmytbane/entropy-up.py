@@ -7,6 +7,10 @@ puts "Please enter any character and enter"
 input = gets.chomp
 puts "Installing haveged and rng-tools"
 system "sudo xbps-install haveged rng-tools"
+puts "^^^"
+puts "Check for errors and report errors to jimmybot@tuta.io <3"
+puts "Please enter any character and enter if no errors are present"
+input = gets.chomp
 system "clear"
 puts "haveged and rng-tools installed"
 puts "Entropy should be going up"
