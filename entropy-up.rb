@@ -7,8 +7,9 @@ puts "Please enter any character and enter"
 input = gets.chomp
 puts "Installing haveged and rng-tools"
 system "sudo apt install haveged rng-tools"
-puts "If the syntax was incorrect, or another error occured, this is to give you a chance to see it."
-puts "Please enter any character and enter"
+puts "^^^"
+puts "Check for errors and report errors to jimmybot@tuta.io <3"
+puts "Please enter any character and enter if no errors are present"
 input = gets.chomp
 system "clear"
 puts "haveged and rng-tools installed"
