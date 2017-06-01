@@ -4,7 +4,7 @@ puts "Current entropy"
 system "cat /proc/sys/kernel/random/entropy_avail"
 puts "Do you allow me to install haveged and rng-tools for you?"
 puts "Please enter any character and enter"
-input = gets
+input = gets.chomp
 puts "Installing haveged and rng-tools"
 system "sudo apt install haveged rng-tools"
 system "clear"
