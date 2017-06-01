@@ -6,6 +6,7 @@ puts "Do you allow me to install haveged and rng-tools for you?"
 puts "Enter if yes"
 input = gets.chomp
 puts "Installing haveged and rng-tools"
+puts "vvv"
 system "sudo xbps-install haveged rng-tools"
 puts "^^^"
 puts "Check for errors and report errors to jimmybot@tuta.io <3"
