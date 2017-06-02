@@ -17,4 +17,4 @@ puts "haveged and rng-tools installed"
 puts "Entropy should be going up"
 puts "Check out your entropy now"
 puts "Current entropy"
-system "cat /proc/sys/kernel/random/entropy_avail"
+system "cat /proc/sys/kernel/random/entropy_avail".chomp
