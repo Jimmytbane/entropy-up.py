@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 #    Copyright (C) <2017>  <jimmybot@tuta.io (jimmybot@riseup.net) PGP key: "374C C0C2 9153 8F0E F877  D8F6 B0A8 8E2F DECC DEE1">
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -12,8 +13,6 @@
 #
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-#!/usr/bin/ruby
 system "clear"
 puts "Current entropy"
 system "cat /proc/sys/kernel/random/entropy_avail"
