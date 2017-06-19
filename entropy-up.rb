@@ -1,5 +1,5 @@
 #!/usr/bin/ruby
-#    Copyright (C) <2017>  <jimmybot@tuta.io (jimmybot@riseup.net) PGP key: "374C C0C2 9153 8F0E F877  D8F6 B0A8 8E2F DECC DEE1">
+#    Copyright (C) <2017>  <jimmybot@teknik.io>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published
