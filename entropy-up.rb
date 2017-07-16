@@ -1,4 +1,4 @@
---[[
+=begin
     Copyright (C) <2017>  <jimmybot@teknik.io>
 
     This program is free software: you can redistribute it and/or modify
@@ -12,8 +12,8 @@
     GNU Affero General Public License for more details.
 
     You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
---]]
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+=end
 
 print("Current entropy")
 os.execute("cat /proc/sys/kernel/random/entropy_avail")
@@ -21,8 +21,7 @@ print("Do you allow me to install haveged for you?")
 print("Enter if yes")
 input = io.read
 print("Installing haveged")
-os.execute("sudo xbps-install haveged")
-os.execute("sudo ln -s /etc/sv/haveged /var/service")
+os.execute("sudo apt install haveged")
 print("haveged installed")
 print("Entropy should be going up")
 print("Check out your entropy now")
