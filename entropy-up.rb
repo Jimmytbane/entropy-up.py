@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 =begin
     Copyright (C) <2017>  <jimmybot@teknik.io>
 
