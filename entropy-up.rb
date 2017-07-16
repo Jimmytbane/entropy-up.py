@@ -17,15 +17,15 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 =end
 
-print("Current entropy")
-os.execute("cat /proc/sys/kernel/random/entropy_avail")
-print("Do you allow me to install haveged for you?")
-print("Enter if yes")
-input = io.read
-print("Installing haveged")
-os.execute("sudo apt install haveged")
-print("haveged installed")
-print("Entropy should be going up")
-print("Check out your entropy now")
-print("Current entropy")
-os.execute("cat /proc/sys/kernel/random/entropy_avail")
+puts "Current entropy"
+system "cat /proc/sys/kernel/random/entropy_avail"
+puts "Do you allow me to install haveged for you?"
+puts "Enter if yes"
+input = gets
+puts "Installing haveged"
+system "sudo apt install haveged"
+puts "haveged installed"
+puts "Entropy should be going up"
+puts "Check out your entropy now"
+puts "Current entropy"
+system "cat /proc/sys/kernel/random/entropy_avail"
