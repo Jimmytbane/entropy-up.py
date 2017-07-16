@@ -17,6 +17,9 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 =end
 
+trap "SIGINT" do
+  abort
+
 puts "Current entropy"
 system "cat /proc/sys/kernel/random/entropy_avail"
 puts "Do you allow me to install haveged for you?"
