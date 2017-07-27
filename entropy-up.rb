@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 =begin
     Copyright (C) <2017>  <jimmybot@teknik.io>
@@ -18,10 +18,11 @@
 =end
 
 trap "SIGINT" do
-  abort
+  abort  
+end
 
-puts "Current entropy"
-system "cat /proc/sys/kernel/random/entropy_avail"
+entropy_1 = `cat /proc/sys/kernel/random/entropy_avail`
+puts "Current entropy -->   #{entropy_1}"
 puts "Do you allow me to install haveged for you?"
 puts "Enter if yes"
 input = gets
@@ -30,5 +31,5 @@ system "sudo apt install haveged"
 puts "haveged installed"
 puts "Entropy should be going up"
 puts "Check out your entropy now"
-puts "Current entropy"
-system "cat /proc/sys/kernel/random/entropy_avail"
+entropy_2 = `cat /proc/sys/kernel/random/entropy_avail`
+puts "Current entropy -->   #{entropy_2}"
